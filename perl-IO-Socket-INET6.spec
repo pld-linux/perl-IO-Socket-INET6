@@ -3,7 +3,7 @@ Summary:	IO-Socket-INET6 perl module
 Summary(pl):	Modu³ perla IO-Socket-INET6
 Name:		perl-IO-Socket-INET6
 Version:	0.01a
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
