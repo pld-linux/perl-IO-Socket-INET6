@@ -8,7 +8,7 @@ License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source0:	ftp://localhost/IO-Socket-INET6-%{version}.tar.gz
+Source0:	ftp://ftp.pld.org.pl/people/agaran/IO-Socket-INET6-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
