@@ -22,7 +22,7 @@ IO::Socket::INET6 - nazwa tlumaczy wszystko ;)
 %setup -q -n IO-Socket-INET6-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
