@@ -6,6 +6,7 @@ Version:	0.01a
 Release:	0
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://localhost/IO-Socket-INET6-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -34,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/IO/Socket/INET6
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf README
