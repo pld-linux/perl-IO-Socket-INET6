@@ -24,7 +24,7 @@ IO::Socket::INET6 - nazwa tlumaczy wszystko ;)
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
