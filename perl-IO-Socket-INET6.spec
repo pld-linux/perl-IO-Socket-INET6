@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	IO-Socket-INET6 perl module
-Summary(pl):	Modu³ perla IO-Socket-INET6
+Summary:	IO::Socket::INET6 perl module
+Summary(pl):	Modu³ perla IO::Socket::INET6
 Name:		perl-IO-Socket-INET6
 Version:	0.01a
 Release:	4
@@ -13,10 +13,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-IO-Socket-INET6 - uses socket6.
+IO::Socket::INET6 - uses socket6.
 
 %description -l pl
-IO-Socket-INET6 - nazwa tlumaczy wszystko ;)
+IO::Socket::INET6 - nazwa tlumaczy wszystko ;)
 
 %prep
 %setup -q -n IO-Socket-INET6-%{version}
