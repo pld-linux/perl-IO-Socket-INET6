@@ -3,11 +3,11 @@ Summary:	IO::Socket::INET6 perl module
 Summary(pl):	Modu³ perla IO::Socket::INET6
 Name:		perl-IO-Socket-INET6
 Version:	0.01a
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.pld.org.pl/people/agaran/IO-Socket-INET6-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -19,10 +19,11 @@ IO::Socket::INET6 - uses socket6.
 IO::Socket::INET6 - nazwa tlumaczy wszystko ;)
 
 %prep
-%setup -q -n IO-Socket-INET6-%{version}
+%setup -q -n IO-Socket-INET6
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -36,4 +37,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitelib}/IO/Socket/INET6.pm
+%{perl_vendorlib}/IO/Socket/INET6.pm
