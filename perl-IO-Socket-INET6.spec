@@ -17,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 IO::Socket::INET6 - uses socket6.
 
 %description -l pl
-IO::Socket::INET6 - nazwa tlumaczy wszystko ;)
+IO::Socket::INET6 - nazwa t³umaczy wszystko ;)
 
 %prep
 %setup -q -n IO-Socket-INET6
