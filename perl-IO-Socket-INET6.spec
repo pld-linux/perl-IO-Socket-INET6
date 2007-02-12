@@ -2,7 +2,7 @@
 %define	pdir	IO
 %define	pnam	Socket-INET6
 Summary:	IO::Socket::INET6 - Object interface for AF_INET|AF_INET6 domain sockets
-Summary(pl):	IO::Socket::INET6 - obiektowy interfejs do gniazd z domen AF_INET|AF_INET6
+Summary(pl.UTF-8):   IO::Socket::INET6 - obiektowy interfejs do gniazd z domen AF_INET|AF_INET6
 Name:		perl-IO-Socket-INET6
 Version:	2.51
 Release:	3
@@ -22,9 +22,9 @@ sockets in either AF_INET or AF_INET6 domains. It is built upon the
 IO::Socket interface and inherits all the methods defined by
 IO::Socket.
 
-%description -l pl
-IO::Socket::INET6 udostêpnia obiektowy interfejs do tworzenia i
-u¿ywania gniazd z rodziny AF_INET oraz AF_INET6. Jest zbudowany w
+%description -l pl.UTF-8
+IO::Socket::INET6 udostÄ™pnia obiektowy interfejs do tworzenia i
+uÅ¼ywania gniazd z rodziny AF_INET oraz AF_INET6. Jest zbudowany w
 opaciu o interfejs IO::Socket i dziedziczy wszystkie metody
 definiowane przez IO::Socket.
 
