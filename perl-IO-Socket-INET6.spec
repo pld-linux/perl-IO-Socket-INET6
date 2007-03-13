@@ -9,8 +9,9 @@ Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e4ef8b7944fa036cda19dc3e1cc688a6
+URL:		http://search.cpan.org/dist/IO-Socket-INET6/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildArch:	noarch
