@@ -4,13 +4,13 @@
 Summary:	IO::Socket::INET6 - Object interface for AF_INET|AF_INET6 domain sockets
 Summary(pl.UTF-8):	IO::Socket::INET6 - obiektowy interfejs do gniazd z domen AF_INET|AF_INET6
 Name:		perl-IO-Socket-INET6
-Version:	2.51
-Release:	3
+Version:	2.54
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e4ef8b7944fa036cda19dc3e1cc688a6
+# Source0-md5:	f2e34c8a0d17c0bd63e1559e29de1676
 URL:		http://search.cpan.org/dist/IO-Socket-INET6/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
