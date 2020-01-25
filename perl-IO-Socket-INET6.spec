@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Socket-INET6
 Summary:	IO::Socket::INET6 - Object interface for AF_INET|AF_INET6 domain sockets
