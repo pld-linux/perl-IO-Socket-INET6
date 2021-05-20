@@ -1,3 +1,7 @@
+#
+# Conditional build
+%bcond_without	tests	# unit tests
+
 %define	pdir	IO
 %define	pnam	Socket-INET6
 Summary:	IO::Socket::INET6 - Object interface for AF_INET|AF_INET6 domain sockets
@@ -10,9 +14,14 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	510ddc1bd75a8340ca7226123fb545c1
-URL:		http://search.cpan.org/dist/IO-Socket-INET6/
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		https://metacpan.org/release/IO-Socket-INET6
+%if %{with tests}
+BuildRequires:	perl-Socket6 >= 0.12
+BuildRequires:	perl-Test-Simple
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,6 +45,10 @@ definiowane przez IO::Socket.
 	INSTALLDIRS=vendor
 %{__make}
 
+%if %{with test}
+%{__make} test
+%endif
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -49,4 +62,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README
 %{perl_vendorlib}/IO/Socket/INET6.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/IO::Socket::INET6.3pm*
